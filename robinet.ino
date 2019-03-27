@@ -76,7 +76,7 @@ bool goblet_present() {
 
 void interruption_flow() // Interrupt function
 {
-  passage_mesure_debit++;
+  //passage_mesure_debit++;
 }
 
 
@@ -175,6 +175,7 @@ void affichage_distribution(double mlitres_actuels) {
 }
 
 double interruptions_to_centilitres(int interruptions) {
+  // 6.3 correspond à une constante de calibration (Florian)
   return ((double) interruptions) / 0.6 / 6.3;
 }
 
